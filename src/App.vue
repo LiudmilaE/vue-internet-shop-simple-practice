@@ -4,9 +4,9 @@
 			<div class="navbar-brand">
 				<router-link class="navbar-item" to="/">
 					<img src="./assets/logo.png" id="logo" alt="Vue.js">
-					Example Internet Shop 
+					Vue Shop 
 				</router-link>
-				<a class="gh-btn navbar-item" title="Github" id="gh-btn" target="_blank" aria-label="Star on GitHub" href="https://github.com/LiudmilaE">
+				<a class="gh-btn navbar-item" title="Github" id="gh-btn" target="_blank" aria-label="Star on GitHub" href="https://github.com/LiudmilaE/vue-internet-shop-simple-practice">
 					<i class="fa fa-github fa-2" aria-hidden="true"></i>
 				</a>
 				<router-link to="/basket" class="navbar-item toggle-item">
@@ -42,6 +42,13 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 769px) {
+		#gh-btn {
+			display: none;
+		}
+	}
+
+
 html {
 	margin: 0;
 	padding: 0;
@@ -57,7 +64,7 @@ html {
 #vue-logo, #logo {
 	height: 15px;
 	width: 15px;
-	margin-RIGHT: 5PX;
+	margin-right: 5px;
 }
 i {
 	margin-right: 7px;
@@ -66,5 +73,9 @@ i {
 .container {
 	padding-top: 40px;
 	padding-bottom: 30px;
+}
+
+.navbar {
+	font-size: 1.2rem;
 }
 </style>

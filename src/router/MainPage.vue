@@ -79,9 +79,13 @@ export default {
 <style scoped>
 	@media screen and (min-width: 769px) {
 		.notification {
-			padding: 5% 15%;
+			padding: 5% 10%;
 		}
 	}
+
+	.notification {
+			padding: 3% 8%;
+		}
 
 	.wrapper {
 		display: flex;
